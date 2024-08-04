@@ -10,15 +10,15 @@
 // Rule Definition
 //------------------------------------------------------------------------------
 
-/** @type {import('../shared/types').Rule} */
 module.exports = {
     meta: {
         type: "suggestion",
 
         docs: {
-            description: "Disallow `null` comparisons without type-checking operators",
+            description: "disallow `null` comparisons without type-checking operators",
+            category: "Best Practices",
             recommended: false,
-            url: "https://eslint.org/docs/latest/rules/no-eq-null"
+            url: "https://eslint.org/docs/rules/no-eq-null"
         },
 
         schema: [],

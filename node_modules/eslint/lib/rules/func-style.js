@@ -8,15 +8,15 @@
 // Rule Definition
 //------------------------------------------------------------------------------
 
-/** @type {import('../shared/types').Rule} */
 module.exports = {
     meta: {
         type: "suggestion",
 
         docs: {
-            description: "Enforce the consistent use of either `function` declarations or expressions",
+            description: "enforce the consistent use of either `function` declarations or expressions",
+            category: "Stylistic Issues",
             recommended: false,
-            url: "https://eslint.org/docs/latest/rules/func-style"
+            url: "https://eslint.org/docs/rules/func-style"
         },
 
         schema: [

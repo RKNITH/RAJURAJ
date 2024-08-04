@@ -8,15 +8,15 @@
 // Rule Definition
 //------------------------------------------------------------------------------
 
-/** @type {import('../shared/types').Rule} */
 module.exports = {
     meta: {
         type: "layout",
 
         docs: {
-            description: "Require or disallow Unicode byte order mark (BOM)",
+            description: "require or disallow Unicode byte order mark (BOM)",
+            category: "Stylistic Issues",
             recommended: false,
-            url: "https://eslint.org/docs/latest/rules/unicode-bom"
+            url: "https://eslint.org/docs/rules/unicode-bom"
         },
 
         fixable: "whitespace",
@@ -42,7 +42,7 @@ module.exports = {
 
             Program: function checkUnicodeBOM(node) {
 
-                const sourceCode = context.sourceCode,
+                const sourceCode = context.getSourceCode(),
                     location = { column: 0, line: 1 },
                     requireBOM = context.options[0] || "never";
 
